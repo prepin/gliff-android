@@ -9,12 +9,20 @@ testDebugUnitTest assembleDebug assembleDebugAndroidTest lintDebug
 BUILD SUCCESSFUL
 20 JUnit tests, 0 failures, 0 errors
 Android lint: 0 errors, 9 warnings
-Python fixture and shortcut-verifier checks: 6 tests, OK
+Python fixture, shortcut-verifier, and release-guard checks: 10 tests, OK
 ```
 
 Build environment: Linux x86-64, JDK 21, Gradle 8.13, Android Gradle Plugin 8.13.2, Android SDK 36.
 The remaining lint warnings concern compatibility attributes, a Gradle update, drawing allocations, XML view constructors, click detection, and untranslated text.
 The touch handler calls `performClick()` through its shared motion handler. Lint does not trace that call.
+
+## Release automation
+
+`mise run release:snapshot` passed with GoReleaser 2.20.0 and Java 21.
+Both the Forgejo and GitHub configurations passed `goreleaser check` and produced SHA-256 checksums.
+The release guards reject dirty trees, mismatched versions, stable tags, and absent credentials.
+The Forgejo push mirror uses a repository-only GitHub deploy key.
+The initial push reached GitHub automatically, with no mirror error and the same commit on both hosts.
 
 ## APK
 

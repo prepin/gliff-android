@@ -15,6 +15,7 @@ Different development signing keys require an uninstall before installation, whi
 ## Verification
 
 - 20 Android unit tests passed.
+- 10 Python checks passed, including release guards.
 - 27 DeX fixture checks passed on a Galaxy S26 and a 4K LG display.
 - 16 checks passed with the original Gliff server on DeX.
 - All 10 injected shortcut chords reached the SSH peer intact.
