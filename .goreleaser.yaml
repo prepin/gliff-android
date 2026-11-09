@@ -1,0 +1,23 @@
+version: 2
+project_name: gliff-android
+force_token: gitea
+builds:
+  - skip: true
+checksum:
+  name_template: gliff-android_checksums.txt
+  algorithm: sha256
+  extra_files:
+    - glob: artifacts/gliff-android-debug.apk
+changelog:
+  disable: true
+gitea_urls:
+  api: https://git.prepin.net/api/v1
+  download: https://git.prepin.net
+release:
+  gitea:
+    owner: prepin
+    name: gliff-android
+  prerelease: true
+  name_template: "Gliff Android {{ .Tag }} (development preview)"
+  extra_files:
+    - glob: artifacts/gliff-android-debug.apk

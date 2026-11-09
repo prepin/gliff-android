@@ -1,0 +1,21 @@
+version: 2
+project_name: gliff-android
+dist: dist-github
+force_token: github
+builds:
+  - skip: true
+checksum:
+  name_template: gliff-android_checksums.txt
+  algorithm: sha256
+  extra_files:
+    - glob: artifacts/gliff-android-debug.apk
+changelog:
+  disable: true
+release:
+  github:
+    owner: prepin
+    name: gliff-android
+  prerelease: true
+  name_template: "Gliff Android {{ .Tag }} (development preview)"
+  extra_files:
+    - glob: artifacts/gliff-android-debug.apk

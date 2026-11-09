@@ -1,0 +1,17 @@
+Gliff Android is an independent Android client for omacom/gliff, not an official
+Omarchy or Samsung product.
+
+Protocol reference:
+https://github.com/omacom/gliff
+Reference commit: 32bb0622cf2feef69515bf8f75a836f657f06083
+Copyright (c) 2026 Kevin McConnell. MIT license, reproduced in LICENSE.
+The wire-format golden tests come from crates/gliff-proto/src/msg.rs.
+No upstream Rust binaries, GTK libraries, or OpenH264 binaries ship in this APK.
+Video decoding uses Android MediaCodec.
+
+Runtime libraries:
+- mwiede/JSch: BSD-style license (JCraft), including its jBCrypt component.
+- Bouncy Castle: MIT license.
+- Jackson Core and Jackson CBOR: Apache License 2.0.
+
+Full third-party license text is included in the APK assets/licenses directory.

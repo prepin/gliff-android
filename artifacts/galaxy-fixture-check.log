@@ -1,0 +1,33 @@
+Performing Streamed Install
+Success
+Performing Streamed Install
+Success
+22224
+/sdcard/Android/data/org.omarchy.gliff/files/device-check.png: 1 file pulled, 0 skipped. 33.3 MB/s (234531 bytes in 0.007s)
+PASS Connection form opens
+PASS Display surface available (device must be awake, unlocked, and Gliff visible)
+PASS SSH host identity verified
+PASS SSH and Gliff handshake succeeds
+PASS MediaCodec renders nonblank H.264 video to the desktop
+PASS App has focus before system input injection
+PASS Android keyboard capture requested with permission granted
+PASS System-dispatched chord stayed in Gliff: [117, 66]
+PASS System-dispatched chord stayed in Gliff: [117, 62]
+PASS System-dispatched chord stayed in Gliff: [57, 61]
+PASS System-dispatched chord stayed in Gliff: [57, 59, 61]
+PASS System-dispatched chord stayed in Gliff: [113, 59, 31]
+PASS System-dispatched chord stayed in Gliff: [117, 8]
+PASS System-dispatched chord stayed in Gliff: [117, 59, 8]
+PASS System-dispatched chord stayed in Gliff: [117, 19]
+PASS System-dispatched chord stayed in Gliff: [117, 113, 22]
+PASS System-dispatched chord stayed in Gliff: [117, 131]
+PASS Focus loss releases held Ctrl
+PASS Shift+Escape releases capture
+PASS Full screen hides the toolbar
+PASS Release restores the toolbar
+PASS Disconnect returns to the connection form
+PASS: 22 device checks
+
+
+PASS: 10 system-dispatched shortcut chords reached the SSH peer intact
+PASS: SSH fixture verified 165 protocol messages: video ACKs, Super/Enter/Tab, focus-loss release, mouse, scroll, clipboard disabled (no text offered or sent), Bye

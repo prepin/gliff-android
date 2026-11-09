@@ -1,0 +1,16 @@
+.gradle/
+.tools/
+.ruff_cache/
+dist/
+dist-github/
+*.jks
+*.keystore
+.env
+.env.*
+local.properties
+**/build/
+*.iml
+.idea/
+__pycache__/
+artifacts/*.apk
+artifacts/*.sha256

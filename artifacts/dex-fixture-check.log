@@ -1,0 +1,35 @@
+22226
+PASS Activity is on requested display: 16
+PASS Connection form opens
+PASS Display surface available (device must be awake, unlocked, and Gliff visible)
+PASS SSH host identity verified
+PASS SSH and Gliff handshake succeeds
+PASS MediaCodec renders nonblank H.264 video to the desktop
+PASS App has focus before system input injection
+PASS Android keyboard capture requested with permission granted
+PASS System-dispatched chord stayed in Gliff: [117, 66]
+PASS System-dispatched chord stayed in Gliff: [117, 62]
+PASS System-dispatched chord stayed in Gliff: [57, 61]
+PASS System-dispatched chord stayed in Gliff: [57, 59, 61]
+PASS System-dispatched chord stayed in Gliff: [113, 59, 31]
+PASS System-dispatched chord stayed in Gliff: [117, 8]
+PASS System-dispatched chord stayed in Gliff: [117, 59, 8]
+PASS System-dispatched chord stayed in Gliff: [117, 19]
+PASS System-dispatched chord stayed in Gliff: [117, 113, 22]
+PASS System-dispatched chord stayed in Gliff: [117, 131]
+PASS System pointer events stayed on the DeX window
+PASS Focus loss releases held Ctrl
+PASS Shift+Escape releases capture
+PASS DeX window resized without disconnect: 1600px to 1280px
+PASS DeX window fills the external display without disconnect
+PASS Hide controls removes the toolbar on the DeX display
+PASS System-dispatched Shift+Escape restores controls and releases DeX input
+PASS DeX window restores to its previous size without disconnect
+PASS Disconnect returns to the connection form
+PASS: 27 device checks
+
+
+PASS: 10 system-dispatched shortcut chords reached the SSH peer intact
+PASS: SSH fixture verified 228 protocol messages: video ACKs, Super/Enter/Tab, focus-loss release, mouse, scroll, clipboard disabled (no text offered or sent), Bye
+/sdcard/Android/data/org.omarchy.gliff/files/device-check.png: 1 file pulled, 0 skipped. 5.9 MB/s (197958 bytes in 0.032s)
+/sdcard/Android/data/org.omarchy.gliff/files/fullscreen-check.png: 1 file pulled, 0 skipped. 13.1 MB/s (1081208 bytes in 0.079s)

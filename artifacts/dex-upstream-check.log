@@ -1,0 +1,22 @@
+22227
+PASS Activity is on requested display: 16
+PASS Connection form opens
+PASS Display surface available (device must be awake, unlocked, and Gliff visible)
+PASS SSH host identity verified
+PASS SSH and Gliff handshake succeeds
+PASS MediaCodec renders nonblank H.264 video to the desktop
+PASS DeX window resized without disconnect: 1600px to 1280px
+PASS Private remote desktop follows the DeX viewport dimensions
+PASS DeX window fills the external display without disconnect
+PASS Private remote desktop follows the DeX viewport dimensions
+PASS Hide controls removes the toolbar on the DeX display
+PASS Private remote desktop follows the DeX viewport dimensions
+PASS System-dispatched Shift+Escape restores controls and releases DeX input
+PASS DeX window restores to its previous size without disconnect
+PASS Private remote desktop follows the DeX viewport dimensions
+PASS Disconnect returns to the connection form
+PASS: 16 device checks
+
+
+/sdcard/Android/data/org.omarchy.gliff/files/device-check.png: 1 file pulled, 0 skipped. 0.5 MB/s (21423 bytes in 0.045s)
+/sdcard/Android/data/org.omarchy.gliff/files/fullscreen-check.png: 1 file pulled, 0 skipped. 2.0 MB/s (38983 bytes in 0.019s)

@@ -1,0 +1,13 @@
+Performing Streamed Install
+Success
+Performing Streamed Install
+Success
+/sdcard/Android/data/org.omarchy.gliff/files/device-check.png: 1 file pulled, 0 skipped. 15.8 MB/s (2158720 bytes in 0.130s)
+PASS Connection form opens
+PASS SSH host identity verified
+PASS SSH and Gliff handshake succeeds
+PASS MediaCodec renders nonblank H.264 video to the desktop
+PASS Disconnect returns to the connection form
+PASS: 5 device checks
+
+

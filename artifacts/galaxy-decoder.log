@@ -1,0 +1,6 @@
+11-09 02:08:45.726  6899  7004 I CCodec  : [c2.exynos.h264.decoder] state->set(RUNNING)
+11-09 02:08:45.727  6899  7004 I CCodecBufferChannel: [c2.exynos.h264.decoder#183] 4 initial input buffers available
+11-09 02:08:45.838  6899  7063 I CCodec  : [c2.exynos.h264.decoder] state->set(RUNNING)
+11-09 02:08:45.839  6899  7063 I CCodecBufferChannel: [c2.exynos.h264.decoder#636] 4 initial input buffers available
+11-09 02:07:43.683  4992  5060 I CCodec  : [c2.exynos.h264.decoder] state->set(RUNNING)
+11-09 02:07:43.684  4992  5060 I CCodecBufferChannel: [c2.exynos.h264.decoder#732] 4 initial input buffers available

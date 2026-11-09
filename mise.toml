@@ -1,0 +1,38 @@
+[tools]
+java = "21"
+goreleaser = "2.20.0"
+
+[tasks.check]
+description = "Run unit tests, Android lint, and release configuration checks"
+run = [
+  "./gradlew testDebugUnitTest lintDebug",
+  "python3 -m unittest discover -s scripts -p 'test_*.py' -v",
+  "goreleaser check --config .goreleaser.yaml",
+  "goreleaser check --config .goreleaser.github.yaml",
+]
+
+[tasks.build]
+description = "Build the development APK"
+run = "./gradlew assembleDebug"
+
+[tasks."release:prepare"]
+description = "Check and copy the APK for GoReleaser"
+depends = ["check", "build"]
+run = "mkdir -p artifacts && cp app/build/outputs/apk/debug/app-debug.apk artifacts/gliff-android-debug.apk"
+
+[tasks."release:snapshot"]
+description = "Exercise both GoReleaser configurations without publishing"
+depends = ["release:prepare"]
+run = [
+  "goreleaser release --snapshot --clean --config .goreleaser.yaml",
+  "goreleaser release --snapshot --clean --config .goreleaser.github.yaml",
+]
+
+[tasks.release]
+description = "Publish a tagged preview APK and checksums to Forgejo and GitHub"
+depends = ["release:prepare"]
+run = "python3 scripts/release.py"
+
+[tasks.mirror]
+description = "Push branches and tags to Forgejo, which mirrors them to GitHub"
+run = ["git push origin --all", "git push origin --tags"]
